@@ -41,9 +41,7 @@
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-.menu-open2 .menu-dropdown{
-  height: 178px;
-}
+
 
 
 
@@ -220,6 +218,7 @@ body.active-popup .popup {
   width: 100%;
   top: 100px;
   padding: 0;
+  margin: 0;
   padding-bottom: 150px;
   position: inherit;
   text-align: center;
@@ -228,28 +227,31 @@ body.active-popup .popup {
   align-items: center;
 }
 .content-title{
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  justify-content: center;  
-  align-items: center;
-  padding: 0;
-}
-
-.content .show-video{
-  display: inline-block;
   padding: 20px;
 }
-.content .show-description{
+
+.show-video{
+  padding: 10px;
   display: inline-block;
+  margin: 0;
+}
+
+.video{
+  width: 400px;
+  height: 300px;
+  display: flex;
+}
+
+.show-description{
+  max-width: 600px;
   font-size: 24px;
-  width: 600px;
-  padding: 50px;
+  padding: 40px;
+  display: inline-block;
 }
 
 .info{
   font-size: 24px;
-  padding: 0;
+  padding: 10px;
 }
 
 .btn {
@@ -352,6 +354,7 @@ body.active-popup .popup {
 
 
 .footer {
+    width: 100%;
     position: relative;
     background: black;
     color:white;
@@ -404,8 +407,8 @@ body.active-popup .popup {
 
   .header__menu li {width: 100%; border-bottom: 1px solid white;}
   .header__logo img{ height:50px;}
-  .menu-open1 .header__menu{height: 180px;}
-  .icon-hamburger{ width: 50px; height: 50px;}
+  .menu-open .header__menu{height: 180px;}
+  .icon-hamburger{ width: 0px; height: 0px;}
   .icon-hamburger span{height: 1px; width: 30px; background: white;position: relative;display: block;margin-top: 11px;}
   
 
@@ -415,7 +418,6 @@ body.active-popup .popup {
     height: 0;
     text-align: center;
     overflow: hidden;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
   }
 
   .logo {
