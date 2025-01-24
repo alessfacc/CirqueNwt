@@ -13,17 +13,12 @@
 
 
     //menu hamburger
-    let item1 = document.querySelector('.icon-hamburger');
+    let item = document.querySelector('.icon-hamburger');
 
-    item1.addEventListener("click", function(){
-      document.body.classList.toggle('menu-open1')
+    item.addEventListener("click", function(){
+      document.body.classList.toggle('menu-open')
     });
 
-    let item2 = document.querySelector('.show');
-
-    item2.addEventListener("click", function(){
-      document.body.classList.toggle('menu-open2')
-    });
 
 
 //popup
